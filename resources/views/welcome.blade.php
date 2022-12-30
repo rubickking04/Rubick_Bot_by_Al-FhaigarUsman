@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Rubick Bot - AI Writing Assistant by Al-Fhaigar Usman</title>
+        <link rel = "icon" href ="{{ asset('storage/images/chat-gpt-logo.jpg') }}" type = "image/x-icon">
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
@@ -41,7 +42,7 @@
                 <div class="w-full rounded-md bg-white border-2 border-gray-600 p-4 min-h-[500px] text-gray-600">
                     <textarea class="min-h-[500px] h-full w-full outline-none" spellcheck="false" placeholder="Results are in here..." readonly>{{ $content }}</textarea>
                 </div>
-                        @endif
+                @endif
 
                 {{-- <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 " /> --}}
                 <span class="block text-sm text-gray-500 sm:text-center text-center dark:text-gray-400">© 2022 Coded with a
