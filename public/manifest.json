@@ -1,0 +1,17 @@
+{
+    "name": "Rubick Bot - AI Writing Assistant by Al-Fhaigar Usman",
+    "short_name": "Rubick Bot",
+    "start_url": "/index.php",
+    "background_color": "#4a5568",
+    "description": "AI Writing Assistant by Al-Fhaigar Usman",
+    "display": "standalone",
+    "theme_color": "#4a5568",
+    "icons": [
+        {
+            "src": "storage/images/chat-gpt-logo.jpg",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

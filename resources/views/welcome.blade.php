@@ -7,6 +7,10 @@
         <title>Rubick Bot - AI Writing Assistant by Al-Fhaigar Usman</title>
         <link rel = "icon" href ="{{ asset('storage/images/chat-gpt-logo.jpg') }}" type = "image/x-icon">
 
+        <!-- PWA  -->
+        <meta name="theme-color" content="#4a5568" />
+        <link rel="apple-touch-icon" href="{{ asset('storage/images/chat-gpt-logo.jpg') }}">
+        <link rel="manifest" href="{{ asset('/manifest.json') }}">
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
