@@ -26,7 +26,7 @@
         <script src="https://unpkg.com/marked" defer></script>
     </head>
     <body class="antialiased">
-        <div class="relative sm:container flex items-top justify-center min-h-screen px-3 bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+        <div class="relative container-fluid flex items-top justify-center min-h-screen bg-gray-100 px-3 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             <div class="max-w-6xl w-full mx-auto sm:px-6 lg:px-8 space-y-4 py-4">
                 <div class="text-center text-gray-800 dark:text-gray-300 py-4">
                     <h1 class="xl:text-7xl sm:text-5xl text-4xl font-bold">Rubick Bot</h1>
@@ -60,6 +60,14 @@
                 </span>
             </div>
         </div>
+        <script src="{{ asset('/sw.js') }}"></script>
+        <script>
+            if (!navigator.serviceWorker.controller) {
+                navigator.serviceWorker.register("/sw.js").then(function (reg) {
+                    console.log("Service worker has been registered for scope: " + reg.scope);
+                });
+            }
+        </script>
         <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
     </body>
 </html>
